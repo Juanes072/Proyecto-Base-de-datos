@@ -1,0 +1,34 @@
+<div class="ver">
+    <p class="texto">Profesores</p>
+      <table class="infoTabla">
+        <thead class="infohead">
+          <tr>
+            <th id="uno">Nombre</th>
+            <th id="dos">Apellido</th>
+            <th id="tres">Numero de documento</th>
+            <th id="cuatro">Facultad</th>
+            <th id="acciones" colspan="2">acciones</th>
+          </tr>
+        </thead>
+        <tbody class="infoBody">
+          {{#each profesores}}
+          <tr>
+            <td id="tabla1">{{nombre}}</td>
+            <td id="tabla2">{{apellido}}</td>
+            <td id="tabla3">{{documento}}</td>
+            <td id="tabla4">{{facultad}}</td>
+            <td id="botonTabla">
+              <a href="/profesores/editar/{{documento}}" class="editar"> &#9997; Editar</a>
+            </td>
+            <td id="botonTabla">
+              <form action="/profesores/eliminar" method="post">
+                <input type="hidden"  value="{{documento}}" name="documento">
+                <button type="submit" class="borrar">&#10060; Borrar</button>
+              </form>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <a href="/profesores"class="boton2">Volver</a>
+    </div>

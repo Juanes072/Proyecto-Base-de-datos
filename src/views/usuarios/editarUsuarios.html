@@ -1,0 +1,17 @@
+<nav id="formulario">
+    <p id="creando">Creando usuario</p>
+    {{#each usuarios}}
+    <form action="" method="post" class="grid">
+        <div class="contenedor">
+            <p id="texto">Nombre:</p>
+            <input id="registro" type="text" name="usuario" required="true" value="{{usuario}}">
+        </div>
+        <div class="contenedor">
+            <p id="texto">Contraseña</p>
+            <input id="registro" type="password" name="contraseña" required="true" value="{{contraseña}}">
+        </div>
+            <input type="submit" placeholder="Crear" class="boton">
+        <a href="/verUsuarios" class="boton2">Volver</a>
+    </form>
+    {{/each}}
+</nav>

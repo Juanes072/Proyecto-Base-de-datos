@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #96fcf7;
+    margin: 0;
+    justify-content: center;
+}
+.bienvenida{
+    height: 40px;
+    margin: 0;
+    padding-top: 15px;
+}
+.editarUsuarios,.fin{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
+   background-color: #96fcf7;
+   width: 400px;
+   border-radius: 25px;
+   box-shadow: 5px 5px 5px 4px rgb(170, 170, 170);
+   text-align: center;
+}
+.tabla,.editarUsuariosEspa{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 24px;
+    background-color: #ffffff;
+    padding: 8px 8px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.redirec{
+    margin-top: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 8px 8px;
+    border-radius: 20px;
+}
+.editarUsuariosEspa{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: #96fcf7;
+    width: 800px;
+}
+.tabla{
+    width: 150px;
+    margin: 0 100%;
+}
+#crear,#ver{
+    text-decoration: none;
+    font-weight: bold;
+    color:#000000;
+}
+#atras{
+    margin-top: 30px;
+    background-color: #ff0000;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#000000;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap: 35px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    margin-right: 35px;
+}
+#creando{
+    font-size: 24px;
+}
+.boton,.boton2{
+    width: 90px;
+    grid-column: 1/3;
+    margin-top: 20px;
+    background-color: #e6e5e5;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border:none;
+    border-radius: 20px;
+    border: solid 1px
+}
+.boton:hover{
+    background-color: greenyellow;
+}
+#registro{
+    height: 15px;
+}
+.boton2{
+    width: 70px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.contenedor{    
+    display: flex;
+    background-color: #e6e5e5;
+    width: 320px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+#semestre{
+    width:177px;
+}
+#formulario{
+    margin-top: 4%;
+    width: 835px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+.entrada{
+    margin-right: 10px;
+    width:177px;
+}
+
+#texto{
+    width: 100px;
+    font-weight: bold;
+}
+.infoTabla{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 15px 30px;
+    background-color: #ffffff;
+}
+th,td{
+    border: 1px solid #000;
+    text-align: left;
+    border-collapse: collapse;
+    height:25px;
+}
+thead{
+    background-color:#dbdbdb;
+}
+#tabla1,#tabla2,#acciones,#uno,#dos{
+    width: 125px;
+}
+#uno,#dos,#acciones,#botonTabla{
+    text-align: center;
+}
+.ver{
+    display: flex;  
+    width: auto;
+    height: auto;
+    background-color: #96fcf7;
+    margin-top: 50px;
+    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.texto{
+    font-weight: bold;
+    font-size: 20px;
+}
+.editar,.borrar{
+   text-decoration: none;
+   appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    border-width: 1px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    color: #000000;
+    background-color: #e6e5e5;
+    width:80px;
+    height: 30px;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+}
+.editar:hover,.borrar:hover{
+    background-color: #96fcf7;
+    cursor: pointer;
+}
+.fin{
+    margin-bottom: 50px;
+}
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <h1 class="bienvenida">Bienvenido al crud basico de competencias</h1>
+    </nav>
+    {{{body}}}
+</body>
+</html>

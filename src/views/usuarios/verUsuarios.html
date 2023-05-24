@@ -1,0 +1,31 @@
+<div class="ver">
+  <p class="texto">Usuarios</p>
+  <table class="infoTabla">
+    <thead class="infohead">
+      <tr>
+        <th id="uno">Usuarios</th>
+        <th id="dos">Contraseña</th>
+        <th id="acciones" colspan="2">acciones</th>
+      </tr>
+    </thead>
+    <tbody class="infoBody">
+      {{#each usuarios}}
+      
+      <tr>
+        <td id="tabla1">{{usuario}}</td>
+        <td id="tabla2">{{contraseña}}</td>
+        <td id="botonTabla">
+          <a href="/usuarios/editar/{{usuario}}" class="editar"> &#9997; Editar</a>
+        </td>
+        <td id="botonTabla">
+          <form action="/usuarios/eliminar" method="post">
+            <input type="hidden"  value="{{usuario}}" name="usuario">
+            <button type="submit" class="borrar">&#10060; Borrar</button>
+          </form>
+        </td>
+      </tr>
+      {{/each}}  
+    </tbody>
+  </table>
+  <a href="/usuarios"class="boton2">Volver</a>   
+</div> 

@@ -1,0 +1,25 @@
+<nav id="formulario">
+    <p id="creando">Creando Instituciones</p>
+    {{#each instituciones}}
+    <form action="" method="post" class="grid">
+        <div class="contenedor">
+            <p id="texto">Nombre:</p>
+            <input class="entrada" value="{{nombre}}" id="registro"type="text" placeholder="Nombre" name="nombre" required="true">
+        </div>
+        <div class="contenedor">
+            <p id="texto">Direccion:</p>
+            <input class="entrada" value="{{direccion}}" id="registro"type="text" placeholder="Direccion" name="direccion" required="true">
+        </div>
+        <div class="contenedor">
+            <p id="texto">Identificador:</p>
+            <input class="entrada" value="{{id}}" type="text" placeholder="Documento" name="id" required="true" >
+        </div>
+        <div class="contenedor">
+            <p id="texto">Profesor:</p> 
+            <input class="entrada" value="{{id_profesor}}" id="semestre"type="number" placeholder="Profesor" name="id_profesor" required="true" min="1" max="10">
+        </div>
+        <input class="boton" type="submit" placeholder="Crear" value="Crear">
+        <a href="/instituciones" class="boton2">volver</a>
+    </form>
+    {{/each}}
+</nav>
